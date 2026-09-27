@@ -1,0 +1,31 @@
+<resources>
+    <!-- Info -->
+    <string name="app_name">BMI Calculator</string>
+    <string name="title_bmi">Body Mass Index</string>
+
+    <string name="label_weight">Weight (kg)</string>
+    <string name="label_height">Height (cm)</string>
+    <string name="label_bmi">BMI</string>
+    <string name="label_category">Category</string>
+
+    <string name="hint_weight">e.g. 65</string>
+    <string name="hint_height">e.g. 168</string>
+    <string name="btn_calculate">Calculate</string>
+
+    <!-- ระดับ BMI -->
+    <string name="cat_underweight">Underweight</string>
+    <string name="cat_normal">Normal</string>
+    <string name="cat_overweight">Overweight</string>
+    <string name="cat_obese">Obese</string>
+    <string name="cat_none">-</string>
+
+    <!-- แจ้งเตือน -->
+    <string name="error_empty">Please enter weight and height</string>
+    <string name="error_zero">Height must be greater than 0</string>
+
+    <!-- เปลี่ยนขนาดฟอนต์ -->
+    <string name="font_dialog_title">Font size changed</string>
+    <string name="font_dialog_msg">Apply the new system font size to this app?</string>
+    <string name="font_use_system">Use system size</string>
+    <string name="font_keep">Keep original</string>
+</resources>

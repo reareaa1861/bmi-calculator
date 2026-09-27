@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_medium">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_bmi"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_large" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <!-- น้ำหนัก -->
+            <TableRow android:layout_marginBottom="@dimen/spacing_medium">
+                <TextView
+                    android:text="@string/label_weight"
+                    android:textSize="@dimen/text_label"
+                    android:textColor="@color/primary_text"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="@dimen/spacing_medium" />
+                <EditText
+                    android:id="@+id/editWeight"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="flagNoExtractUi"
+                    android:hint="@string/hint_weight"
+                    android:textSize="@dimen/text_input"
+                    android:gravity="end" />
+            </TableRow>
+
+            <!-- ส่วนสูง -->
+            <TableRow android:layout_marginBottom="@dimen/spacing_medium">
+                <TextView
+                    android:text="@string/label_height"
+                    android:textSize="@dimen/text_label"
+                    android:textColor="@color/primary_text"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="@dimen/spacing_medium" />
+                <EditText
+                    android:id="@+id/editHeight"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="flagNoExtractUi"
+                    android:hint="@string/hint_height"
+                    android:textSize="@dimen/text_input"
+                    android:gravity="end" />
+            </TableRow>
+
+            <!-- แถวผล BMI -->
+            <TableRow android:layout_marginBottom="@dimen/spacing_medium">
+                <TextView
+                    android:text="@string/label_bmi"
+                    android:textSize="@dimen/text_label"
+                    android:textColor="@color/primary_text"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="@dimen/spacing_medium" />
+                <TextView
+                    android:id="@+id/txtBmi"
+                    android:text="@string/cat_none"
+                    android:textSize="@dimen/text_result"
+                    android:background="@color/result_bg"
+                    android:padding="@dimen/spacing_small"
+                    android:gravity="end" />
+            </TableRow>
+
+            <!-- แถวเกณฑ์ -->
+            <TableRow android:layout_marginBottom="@dimen/spacing_large">
+                <TextView
+                    android:text="@string/label_category"
+                    android:textSize="@dimen/text_label"
+                    android:textColor="@color/primary_text"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="@dimen/spacing_medium" />
+                <TextView
+                    android:id="@+id/txtCategory"
+                    android:text="@string/cat_none"
+                    android:textSize="@dimen/text_result"
+                    android:textStyle="bold"
+                    android:background="@color/result_bg"
+                    android:padding="@dimen/spacing_small"
+                    android:gravity="end" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- ปุ่มคำนวณ -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/btn_calculate"
+            android:textSize="@dimen/text_button" />
+    </LinearLayout>
+</ScrollView>
